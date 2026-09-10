@@ -1,0 +1,1 @@
+torchrun --nproc_per_node 2 train_pretrain.py --epochs 1 --batch_size 32 --accumulation_steps 8 --hidden_size 768 --num_hidden_layers 8 --max_seq_len 340 --use_moe 1 --from_resume 1 --use_wandb --wandb_project MiniMind-Pretrain-MoE --log_interval 50 --save_interval 200

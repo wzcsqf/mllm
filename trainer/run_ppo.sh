@@ -1,0 +1,1 @@
+torchrun --nproc_per_node 2 train_ppo.py --epochs 1 --batch_size 2 --hidden_size 768 --num_hidden_layers 8 --max_seq_len 768 --max_gen_len 512 --from_weight full_sft --from_resume 1 --use_wandb --wandb_project MiniMind-PPO --save_interval 10 --reward_model_path /data/weizichuan/projects/internlm2-1_8b-reward
